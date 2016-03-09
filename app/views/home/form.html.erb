@@ -24,17 +24,14 @@
         <li class="item">
           <%= check_box_tag :puppies %> I like <%= label_tag :puppies %>
         </li>
-<<<<<<< HEAD
         <li class="item">
           <%= Rails.env.development?ENV['CASH'] %>
         </li>
-=======
         <% if Rails.env.development? %>
           <li class="item">
             <%= check_box_tag :cold_hard_cash %> I like <%= label_tag :cold_hard_cash %>
           </li>
         <% end %>
->>>>>>> 207fec69222e6620330cb87587620fec4ae4a9fd
       </ul>
     </div>
     <%= submit_tag %>
